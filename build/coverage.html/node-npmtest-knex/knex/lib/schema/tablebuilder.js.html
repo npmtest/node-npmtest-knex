@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-knex/knex/lib/schema/tablebuilder.js</title>
+    <meta charset="utf-8">
+    <style>
+        body, html {
+            margin:0; padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 10pt;
+        }
+        div.header, div.footer {
+            background: #eee;
+            padding: 1em;
+        }
+        div.header {
+            height: 160px;
+            padding: 0 1em 0 1em;
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            border-bottom: 1px solid #666;
+            width: 100%;
+        }
+        div.footer {
+            border-top: 1px solid #666;
+        }
+        div.body {
+            margin-top: 170px;
+        }
+        div.meta {
+            font-size: 90%;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 12pt;
+        }
+        h2 {
+            font-size: 10pt;
+        }
+        pre {
+            font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            tab-size: 2;
+        }
+
+        div.path { font-size: 110%; }
+        div.path a:link, div.path a:visited { color: #000; }
+        table.coverage { border-collapse: collapse; margin:0; padding: 0 }
+
+        table.coverage td {
+            margin: 0;
+            padding: 0;
+            color: #111;
+            vertical-align: top;
+        }
+        table.coverage td.line-count {
+            width: 50px;
+            text-align: right;
+            padding-right: 5px;
+        }
+        table.coverage td.line-coverage {
+            color: #777 !important;
+            text-align: right;
+            border-left: 1px solid #666;
+            border-right: 1px solid #666;
+        }
+
+        table.coverage td.text {
+        }
+
+        table.coverage td span.cline-any {
+            display: inline-block;
+            padding: 0 5px;
+            width: 40px;
+        }
+        table.coverage td span.cline-neutral {
+            background: #eee;
+        }
+        table.coverage td span.cline-yes {
+            background: #b5d592;
+            color: #999;
+        }
+        table.coverage td span.cline-no {
+            background: #fc8c84;
+        }
+
+        .cstat-yes { color: #111; }
+        .cstat-no { background: #fc8c84; color: #111; }
+        .fstat-no { background: #ffc520; color: #111 !important; }
+        .cbranch-no { background:  yellow !important; color: #111; }
+
+        .cstat-skip { background: #ddd; color: #111; }
+        .fstat-skip { background: #ddd; color: #111 !important; }
+        .cbranch-skip { background: #ddd !important; color: #111; }
+
+        .missing-if-branch {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            padding: 0 4px;
+            background: black;
+            color: yellow;
+        }
+
+        .skip-if-branch {
+            display: none;
+            margin-right: 10px;
+            position: relative;
+            padding: 0 4px;
+            background: #ccc;
+            color: white;
+        }
+
+        .missing-if-branch .typ, .skip-if-branch .typ {
+            color: inherit !important;
+        }
+
+        .entity, .metric { font-weight: bold; }
+        .metric { display: inline-block; border: 1px solid #333; padding: 0.3em; background: white; }
+        .metric small { font-size: 80%; font-weight: normal; color: #666; }
+
+        div.coverage-summary table { border-collapse: collapse; margin: 3em; font-size: 110%; }
+        div.coverage-summary td, div.coverage-summary table  th { margin: 0; padding: 0.25em 1em; border-top: 1px solid #666; border-bottom: 1px solid #666; }
+        div.coverage-summary th { text-align: left; border: 1px solid #666; background: #eee; font-weight: normal; }
+        div.coverage-summary th.file { border-right: none !important; }
+        div.coverage-summary th.pic { border-left: none !important; text-align: right; }
+        div.coverage-summary th.pct { border-right: none !important; }
+        div.coverage-summary th.abs { border-left: none !important; text-align: right; }
+        div.coverage-summary td.pct { text-align: right; border-left: 1px solid #666; }
+        div.coverage-summary td.abs { text-align: right; font-size: 90%; color: #444; border-right: 1px solid #666; }
+        div.coverage-summary td.file { text-align: right; border-left: 1px solid #666; white-space: nowrap;  }
+        div.coverage-summary td.pic { min-width: 120px !important;  }
+        div.coverage-summary a:link { color: #000; }
+        div.coverage-summary a:visited { color: #333; }
+        div.coverage-summary tfoot td { border-top: 1px solid #666; }
+
+        div.coverage-summary .yui3-datatable-sort-indicator, div.coverage-summary .dummy-sort-indicator {
+            height: 10px;
+            width: 7px;
+            display: inline-block;
+            margin-left: 0.5em;
+        }
+        div.coverage-summary .yui3-datatable-sort-indicator {
+            background: no-repeat scroll 0 0 transparent;
+        }
+        div.coverage-summary .yui3-datatable-sorted .yui3-datatable-sort-indicator {
+            background-position: 0 -20px;
+        }
+        div.coverage-summary .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
+            background-position: 0 -10px;
+        }
+
+        .high { background: #b5d592 !important; }
+        .medium { background: #ffe87c !important; }
+        .low { background: #fc8c84 !important; }
+
+        span.cover-fill, span.cover-empty {
+            display:inline-block;
+            border:1px solid #444;
+            background: white;
+            height: 12px;
+        }
+        span.cover-fill {
+            background: #ccc;
+            border-right: 1px solid #444;
+        }
+        span.cover-empty {
+            background: white;
+            border-left: none;
+        }
+        span.cover-full {
+            border-right: none !important;
+        }
+        pre.prettyprint {
+            border: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .com { color: #999 !important; }
+        .ignore-none { color: #999; font-weight: normal; }
+
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1 style="font-weight: bold;">
+        <a href="https://github.com/npmtest/node-npmtest-knex">npmtest-knex (v0.0.1)</a>
+    </h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-knex/knex/lib/schema/tablebuilder.js</span></h1>
+    <h2>
+        
+        Statements: <span class="metric">34.82% <small>(39 / 112)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Branches: <span class="metric">19.44% <small>(7 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Functions: <span class="metric">24% <small>(6 / 25)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Lines: <span class="metric">35.29% <small>(36 / 102)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-knex/knex/lib/schema/</a> &#187; tablebuilder.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">51</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+exports.__esModule = true;
+&nbsp;
+var _typeof2 = require('babel-runtime/helpers/typeof');
+&nbsp;
+var _typeof3 = _interopRequireDefault(_typeof2);
+&nbsp;
+var _isFunction2 = require('lodash/isFunction');
+&nbsp;
+var _isFunction3 = _interopRequireDefault(_isFunction2);
+&nbsp;
+var _isString2 = require('lodash/isString');
+&nbsp;
+var _isString3 = _interopRequireDefault(_isString2);
+&nbsp;
+var _toArray2 = require('lodash/toArray');
+&nbsp;
+var _toArray3 = _interopRequireDefault(_toArray2);
+&nbsp;
+var _each2 = require('lodash/each');
+&nbsp;
+var _each3 = _interopRequireDefault(_each2);
+&nbsp;
+var _extend2 = require('lodash/extend');
+&nbsp;
+var _extend3 = _interopRequireDefault(_extend2);
+&nbsp;
+var _helpers = require('../helpers');
+&nbsp;
+var helpers = _interopRequireWildcard(_helpers);
+&nbsp;
+function _interopRequireWildcard(obj) { <span class="missing-if-branch" title="else path not taken" >E</span>if (obj &amp;&amp; obj.__esModule) { return obj; } else { <span class="cstat-no" title="statement not covered" >var newObj = {}; <span class="cstat-no" title="statement not covered" ></span>if (obj != null) { <span class="cstat-no" title="statement not covered" >for (var key in obj) { <span class="cstat-no" title="statement not covered" >if (Object.prototype.hasOwnProperty.call(obj, key)) <span class="cstat-no" title="statement not covered" >newObj[key] = obj[key]; </span></span>} </span>} <span class="cstat-no" title="statement not covered" ></span>newObj.default = obj; <span class="cstat-no" title="statement not covered" ></span>return newObj; </span>} }
+&nbsp;
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }
+&nbsp;
+<span class="fstat-no" title="function not covered" >function TableBuilder(client, method, tableName, fn) {</span>
+<span class="cstat-no" title="statement not covered" >  this.client = client;</span>
+<span class="cstat-no" title="statement not covered" >  this._fn = fn;</span>
+<span class="cstat-no" title="statement not covered" >  this._method = method;</span>
+<span class="cstat-no" title="statement not covered" >  this._schemaName = undefined;</span>
+<span class="cstat-no" title="statement not covered" >  this._tableName = tableName;</span>
+<span class="cstat-no" title="statement not covered" >  this._statements = [];</span>
+<span class="cstat-no" title="statement not covered" >  this._single = {};</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!(0, _isFunction3.default)(this._fn)) {</span>
+<span class="cstat-no" title="statement not covered" >    throw new TypeError('A callback function must be supplied to calls against `.createTable` ' + 'and `.table`');</span>
+  }
+}
+// TableBuilder
+&nbsp;
+// Takes the function passed to the "createTable" or "table/editTable"
+// functions and calls it with the "TableBuilder" as both the context and
+// the first argument. Inside this function we can specify what happens to the
+// method, pushing everything we want to do onto the "allStatements" array,
+// which is then compiled into sql.
+// ------
+&nbsp;
+&nbsp;
+TableBuilder.prototype.setSchema = <span class="fstat-no" title="function not covered" >function (schemaName) {</span>
+<span class="cstat-no" title="statement not covered" >  this._schemaName = schemaName;</span>
+};
+&nbsp;
+// Convert the current tableBuilder object "toSQL"
+// giving us additional methods if we're altering
+// rather than creating the table.
+TableBuilder.prototype.toSQL = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >  if (this._method === 'alter') {</span>
+<span class="cstat-no" title="statement not covered" >    (0, _extend3.default)(this, AlterMethods);</span>
+  }
+<span class="cstat-no" title="statement not covered" >  this._fn.call(this, this);</span>
+<span class="cstat-no" title="statement not covered" >  return this.client.tableCompiler(this).toSQL();</span>
+};
+&nbsp;
+(0, _each3.default)([
+&nbsp;
+// Each of the index methods can be called individually, with the
+// column name to be used, e.g. table.unique('column').
+'index', 'primary', 'unique',
+&nbsp;
+// Key specific
+'dropPrimary', 'dropUnique', 'dropIndex', 'dropForeign'], function (method) {
+  TableBuilder.prototype[method] = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    this._statements.push({</span>
+      grouping: 'alterTable',
+      method: method,
+      args: (0, _toArray3.default)(arguments)
+    });
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+  };
+});
+&nbsp;
+// Warn for dialect-specific table methods, since that's the
+// only time these are supported.
+var specialMethods = {
+  mysql: ['engine', 'charset', 'collate'],
+  postgresql: ['inherits']
+};
+(0, _each3.default)(specialMethods, function (methods, dialect) {
+  (0, _each3.default)(methods, function (method) {
+    TableBuilder.prototype[method] = <span class="fstat-no" title="function not covered" >function (value) {</span>
+<span class="cstat-no" title="statement not covered" >      if (this.client.dialect !== dialect) {</span>
+<span class="cstat-no" title="statement not covered" >        helpers.warn('Knex only supports ' + method + ' statement with ' + dialect + '.');</span>
+      }
+<span class="cstat-no" title="statement not covered" >      if (this._method === 'alter') {</span>
+<span class="cstat-no" title="statement not covered" >        helpers.warn('Knex does not support altering the ' + method + ' outside of create ' + 'table, please use knex.raw statement.');</span>
+      }
+<span class="cstat-no" title="statement not covered" >      this._single[method] = value;</span>
+    };
+  });
+});
+&nbsp;
+// Each of the column types that we can add, we create a new ColumnBuilder
+// instance and push it onto the statements array.
+var columnTypes = [
+&nbsp;
+// Numeric
+'tinyint', 'smallint', 'mediumint', 'int', 'bigint', 'decimal', 'float', 'double', 'real', 'bit', 'boolean', 'serial',
+&nbsp;
+// Date / Time
+'date', 'datetime', 'timestamp', 'time', 'year',
+&nbsp;
+// String
+'char', 'varchar', 'tinytext', 'tinyText', 'text', 'mediumtext', 'mediumText', 'longtext', 'longText', 'binary', 'varbinary', 'tinyblob', 'tinyBlob', 'mediumblob', 'mediumBlob', 'blob', 'longblob', 'longBlob', 'enum', 'set',
+&nbsp;
+// Increments, Aliases, and Additional
+'bool', 'dateTime', 'increments', 'bigincrements', 'bigIncrements', 'integer', 'biginteger', 'bigInteger', 'string', 'json', 'jsonb', 'uuid', 'enu', 'specificType'];
+&nbsp;
+// For each of the column methods, create a new "ColumnBuilder" interface,
+// push it onto the "allStatements" stack, and then return the interface,
+// with which we can add indexes, etc.
+(0, _each3.default)(columnTypes, function (type) {
+  TableBuilder.prototype[type] = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    var args = (0, _toArray3.default)(arguments);</span>
+<span class="cstat-no" title="statement not covered" >    var builder = this.client.columnBuilder(this, type, args);</span>
+<span class="cstat-no" title="statement not covered" >    this._statements.push({</span>
+      grouping: 'columns',
+      builder: builder
+    });
+<span class="cstat-no" title="statement not covered" >    return builder;</span>
+  };
+});
+&nbsp;
+// The "timestamps" call is really just sets the `created_at` and `updated_at` columns.
+TableBuilder.prototype.timestamps = <span class="fstat-no" title="function not covered" >function timestamps() {</span>
+<span class="cstat-no" title="statement not covered" >  var method = arguments[0] === true ? 'timestamp' : 'datetime';</span>
+<span class="cstat-no" title="statement not covered" >  var createdAt = this[method]('created_at');</span>
+<span class="cstat-no" title="statement not covered" >  var updatedAt = this[method]('updated_at');</span>
+<span class="cstat-no" title="statement not covered" >  if (arguments[1] === true) {</span>
+<span class="cstat-no" title="statement not covered" >    var now = this.client.raw('CURRENT_TIMESTAMP');</span>
+<span class="cstat-no" title="statement not covered" >    createdAt.notNullable().defaultTo(now);</span>
+<span class="cstat-no" title="statement not covered" >    updatedAt.notNullable().defaultTo(now);</span>
+  }
+<span class="cstat-no" title="statement not covered" >  return;</span>
+};
+&nbsp;
+// Set the comment value for a table, they're only allowed to be called
+// once per table.
+TableBuilder.prototype.comment = <span class="fstat-no" title="function not covered" >function (value) {</span>
+<span class="cstat-no" title="statement not covered" >  this._single.comment = value;</span>
+};
+&nbsp;
+// Set a foreign key on the table, calling
+// `table.foreign('column_name').references('column').on('table').onDelete()...
+// Also called from the ColumnBuilder context when chaining.
+TableBuilder.prototype.foreign = <span class="fstat-no" title="function not covered" >function (column, keyName) {</span>
+<span class="cstat-no" title="statement not covered" >  var foreignData = { column: column, keyName: keyName };</span>
+<span class="cstat-no" title="statement not covered" >  this._statements.push({</span>
+    grouping: 'alterTable',
+    method: 'foreign',
+    args: [foreignData]
+  });
+<span class="cstat-no" title="statement not covered" >  var returnObj = {</span>
+    references: <span class="fstat-no" title="function not covered" >function references(tableColumn) {</span>
+<span class="cstat-no" title="statement not covered" >      var pieces = void 0;</span>
+<span class="cstat-no" title="statement not covered" >      if ((0, _isString3.default)(tableColumn)) {</span>
+<span class="cstat-no" title="statement not covered" >        pieces = tableColumn.split('.');</span>
+      }
+<span class="cstat-no" title="statement not covered" >      if (!pieces || pieces.length === 1) {</span>
+<span class="cstat-no" title="statement not covered" >        foreignData.references = pieces ? pieces[0] : tableColumn;</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          on: <span class="fstat-no" title="function not covered" >function on(tableName) {</span>
+<span class="cstat-no" title="statement not covered" >            if (typeof tableName !== 'string') {</span>
+<span class="cstat-no" title="statement not covered" >              throw new TypeError('Expected tableName to be a string, got: ' + (typeof tableName === 'undefined' ? 'undefined' : (0, _typeof3.default)(tableName)));</span>
+            }
+<span class="cstat-no" title="statement not covered" >            foreignData.inTable = tableName;</span>
+<span class="cstat-no" title="statement not covered" >            return returnObj;</span>
+          },
+          inTable: <span class="fstat-no" title="function not covered" >function inTable() {</span>
+<span class="cstat-no" title="statement not covered" >            return this.on.apply(this, arguments);</span>
+          }
+        };
+      }
+<span class="cstat-no" title="statement not covered" >      foreignData.inTable = pieces[0];</span>
+<span class="cstat-no" title="statement not covered" >      foreignData.references = pieces[1];</span>
+<span class="cstat-no" title="statement not covered" >      return returnObj;</span>
+    },
+    withKeyName: <span class="fstat-no" title="function not covered" >function withKeyName(keyName) {</span>
+<span class="cstat-no" title="statement not covered" >      foreignData.keyName = keyName;</span>
+<span class="cstat-no" title="statement not covered" >      return returnObj;</span>
+    },
+    onUpdate: <span class="fstat-no" title="function not covered" >function onUpdate(statement) {</span>
+<span class="cstat-no" title="statement not covered" >      foreignData.onUpdate = statement;</span>
+<span class="cstat-no" title="statement not covered" >      return returnObj;</span>
+    },
+    onDelete: <span class="fstat-no" title="function not covered" >function onDelete(statement) {</span>
+<span class="cstat-no" title="statement not covered" >      foreignData.onDelete = statement;</span>
+<span class="cstat-no" title="statement not covered" >      return returnObj;</span>
+    },
+    _columnBuilder: <span class="fstat-no" title="function not covered" >function _columnBuilder(builder) {</span>
+<span class="cstat-no" title="statement not covered" >      (0, _extend3.default)(builder, returnObj);</span>
+<span class="cstat-no" title="statement not covered" >      returnObj = builder;</span>
+<span class="cstat-no" title="statement not covered" >      return builder;</span>
+    }
+  };
+<span class="cstat-no" title="statement not covered" >  return returnObj;</span>
+};
+&nbsp;
+var AlterMethods = {
+&nbsp;
+  // Renames the current column `from` the current
+  // TODO: this.column(from).rename(to)
+  renameColumn: <span class="fstat-no" title="function not covered" >function renameColumn(from, to) {</span>
+<span class="cstat-no" title="statement not covered" >    this._statements.push({</span>
+      grouping: 'alterTable',
+      method: 'renameColumn',
+      args: [from, to]
+    });
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+  },
+  dropTimestamps: <span class="fstat-no" title="function not covered" >function dropTimestamps() {</span>
+<span class="cstat-no" title="statement not covered" >    return this.dropColumns(['created_at', 'updated_at']);</span>
+  }
+&nbsp;
+  // TODO: changeType
+&nbsp;
+};
+&nbsp;
+// Drop a column from the current table.
+// TODO: Enable this.column(columnName).drop();
+AlterMethods.dropColumn = AlterMethods.dropColumns = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >  this._statements.push({</span>
+    grouping: 'alterTable',
+    method: 'dropColumn',
+    args: (0, _toArray3.default)(arguments)
+  });
+<span class="cstat-no" title="statement not covered" >  return this;</span>
+};
+&nbsp;
+exports.default = TableBuilder;
+module.exports = exports['default'];
+&nbsp;</pre></td></tr>
+</table></pre>
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 08:02:54 GMT+0000 (UTC)</div>
+</div>
+</body>
+</html>
