@@ -32,7 +32,7 @@
 <tspan x="10" y="474">  │ │ │ └── is-extglob@1.0.0 </tspan>
 <tspan x="10" y="490">  │ │ ├─┬ micromatch@2.3.11 </tspan>
 <tspan x="10" y="506">  │ │ │ ├─┬ arr-diff@2.0.0 </tspan>
-<tspan x="10" y="522">  │ │ │ │ └── arr-flatten@1.0.1 </tspan>
+<tspan x="10" y="522">  │ │ │ │ └── arr-flatten@1.0.2 </tspan>
 <tspan x="10" y="538">  │ │ │ ├── array-unique@0.2.1 </tspan>
 <tspan x="10" y="554">  │ │ │ ├─┬ braces@1.8.5 </tspan>
 <tspan x="10" y="570">  │ │ │ │ ├─┬ expand-range@1.8.2 </tspan>
