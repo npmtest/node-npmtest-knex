@@ -1,7 +1,7 @@
 # test coverage for  [knex (v0.12.9)](https://github.com/tgriesser/knex#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-knex.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-knex) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-knex.svg)](https://travis-ci.org/npmtest/node-npmtest-knex)
 #### A batteries-included SQL query & schema builder for Postgres, MySQL and SQLite3 and the Browser
 
-[![NPM](https://nodei.co/npm/knex.png?downloads=true)](https://www.npmjs.com/package/knex)
+[![NPM](https://nodei.co/npm/knex.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/knex)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-knex/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,11 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-knex/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-knex/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-knex/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-knex/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-knex/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-knex/build/coverage.html/index.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-knex/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-knex/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-knex/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-knex%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-knex/build/test-report.html)
+[![test-report](https://npmtest.github.io/node-npmtest-knex/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-knex/build/test-report.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-knex/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-knex%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-knex/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-knex/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-knex/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-knex/build/screenCapture.npmPackageListing.svg)
 
@@ -144,36 +144,28 @@
     "main": "knex.js",
     "maintainers": [
         {
-            "name": "elhigu",
-            "email": "mikael.lepisto@vincit.com"
+            "name": "elhigu"
         },
         {
-            "name": "erisds",
-            "email": "erisds@gmail.com"
+            "name": "erisds"
         },
         {
-            "name": "kirrg001",
-            "email": "katharina.irrgang@googlemail.com"
+            "name": "kirrg001"
         },
         {
-            "name": "rhys-vdw",
-            "email": "rhys.vdw@gmail.com"
+            "name": "rhys-vdw"
         },
         {
-            "name": "tgriesser",
-            "email": "tgriesser10@gmail.com"
+            "name": "tgriesser"
         },
         {
-            "name": "tjwebb",
-            "email": "me@traviswebb.com"
+            "name": "tjwebb"
         },
         {
-            "name": "tkellen",
-            "email": "tyler@sleekcode.net"
+            "name": "tkellen"
         },
         {
-            "name": "wubzz",
-            "email": "wubzz94@hotmail.com"
+            "name": "wubzz"
         }
     ],
     "name": "knex",
@@ -182,7 +174,6 @@
         "./lib/migrate": "./lib/util/noop.js",
         "./lib/seed": "./lib/util/noop.js"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/tgriesser/knex.git"
