@@ -1,193 +1,193 @@
 <svg height="3038" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="3038" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-18 19:54:28 +0000   754764 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-18 19:54:28 +0000    24161 bytes  CHANGELOG.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-18 19:54:28 +0000     3090 bytes  CONTRIBUTING.md</tspan>
-<tspan x="10" y="74">  3.  2017-04-18 19:54:28 +0000     1064 bytes  LICENSE</tspan>
-<tspan x="10" y="90">  4.  2017-04-18 19:54:28 +0000     2784 bytes  README.md</tspan>
-<tspan x="10" y="106">  5.  2017-04-18 19:54:28 +0000     6498 bytes  bin/cli.js</tspan>
-<tspan x="10" y="122">  6.  2017-04-18 19:54:28 +0000      232 bytes  knex.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-18 19:54:28 +0000    11491 bytes  lib/client.js</tspan>
-<tspan x="10" y="154">  8.  2017-04-18 19:54:28 +0000     5470 bytes  lib/dialects/maria/index.js</tspan>
-<tspan x="10" y="170">  9.  2017-04-18 19:54:28 +0000     2311 bytes  lib/dialects/maria/transaction.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-18 19:54:28 +0000    10104 bytes  lib/dialects/mssql/index.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-18 19:54:28 +0000     7515 bytes  lib/dialects/mssql/query/compiler.js</tspan>
-<tspan x="10" y="218"> 12.  2017-04-18 19:54:28 +0000     3347 bytes  lib/dialects/mssql/schema/columncompiler.js</tspan>
-<tspan x="10" y="234"> 13.  2017-04-18 19:54:28 +0000     2257 bytes  lib/dialects/mssql/schema/compiler.js</tspan>
-<tspan x="10" y="250"> 14.  2017-04-18 19:54:28 +0000     7110 bytes  lib/dialects/mssql/schema/tablecompiler.js</tspan>
-<tspan x="10" y="266"> 15.  2017-04-18 19:54:28 +0000     3951 bytes  lib/dialects/mssql/transaction.js</tspan>
-<tspan x="10" y="282"> 16.  2017-04-18 19:54:28 +0000     7074 bytes  lib/dialects/mysql/index.js</tspan>
-<tspan x="10" y="298"> 17.  2017-04-18 19:54:28 +0000     2660 bytes  lib/dialects/mysql/query/compiler.js</tspan>
-<tspan x="10" y="314"> 18.  2017-04-18 19:54:28 +0000     3493 bytes  lib/dialects/mysql/schema/columncompiler.js</tspan>
-<tspan x="10" y="330"> 19.  2017-04-18 19:54:28 +0000     1574 bytes  lib/dialects/mysql/schema/compiler.js</tspan>
-<tspan x="10" y="346"> 20.  2017-04-18 19:54:28 +0000     8349 bytes  lib/dialects/mysql/schema/tablecompiler.js</tspan>
-<tspan x="10" y="362"> 21.  2017-04-18 19:54:28 +0000     1872 bytes  lib/dialects/mysql/transaction.js</tspan>
-<tspan x="10" y="378"> 22.  2017-04-18 19:54:28 +0000     3716 bytes  lib/dialects/mysql2/index.js</tspan>
-<tspan x="10" y="394"> 23.  2017-04-18 19:54:28 +0000     1810 bytes  lib/dialects/mysql2/transaction.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-18 19:54:28 +0000     1684 bytes  lib/dialects/oracle/formatter.js</tspan>
-<tspan x="10" y="426"> 25.  2017-04-18 19:54:28 +0000     8243 bytes  lib/dialects/oracle/index.js</tspan>
-<tspan x="10" y="442"> 26.  2017-04-18 19:54:28 +0000    10389 bytes  lib/dialects/oracle/query/compiler.js</tspan>
-<tspan x="10" y="458"> 27.  2017-04-18 19:54:28 +0000      962 bytes  lib/dialects/oracle/schema/columnbuilder.js</tspan>
-<tspan x="10" y="474"> 28.  2017-04-18 19:54:28 +0000     4309 bytes  lib/dialects/oracle/schema/columncompiler.js</tspan>
-<tspan x="10" y="490"> 29.  2017-04-18 19:54:28 +0000     3039 bytes  lib/dialects/oracle/schema/compiler.js</tspan>
-<tspan x="10" y="506"> 30.  2017-04-18 19:54:28 +0000     5079 bytes  lib/dialects/oracle/schema/tablecompiler.js</tspan>
-<tspan x="10" y="522"> 31.  2017-04-18 19:54:28 +0000     5134 bytes  lib/dialects/oracle/schema/trigger.js</tspan>
-<tspan x="10" y="538"> 32.  2017-04-18 19:54:28 +0000     2588 bytes  lib/dialects/oracle/transaction.js</tspan>
-<tspan x="10" y="554"> 33.  2017-04-18 19:54:28 +0000     1815 bytes  lib/dialects/oracle/utils.js</tspan>
-<tspan x="10" y="570"> 34.  2017-04-18 19:54:28 +0000    14436 bytes  lib/dialects/oracledb/index.js</tspan>
-<tspan x="10" y="586"> 35.  2017-04-18 19:54:28 +0000     9825 bytes  lib/dialects/oracledb/query/compiler.js</tspan>
-<tspan x="10" y="602"> 36.  2017-04-18 19:54:28 +0000      845 bytes  lib/dialects/oracledb/schema/columncompiler.js</tspan>
-<tspan x="10" y="618"> 37.  2017-04-18 19:54:28 +0000     2791 bytes  lib/dialects/oracledb/transaction.js</tspan>
-<tspan x="10" y="634"> 38.  2017-04-18 19:54:28 +0000      340 bytes  lib/dialects/oracledb/utils.js</tspan>
-<tspan x="10" y="650"> 39.  2017-04-18 19:54:28 +0000     9281 bytes  lib/dialects/postgres/index.js</tspan>
-<tspan x="10" y="666"> 40.  2017-04-18 19:54:28 +0000     3453 bytes  lib/dialects/postgres/query/compiler.js</tspan>
-<tspan x="10" y="682"> 41.  2017-04-18 19:54:28 +0000     2723 bytes  lib/dialects/postgres/schema/columncompiler.js</tspan>
-<tspan x="10" y="698"> 42.  2017-04-18 19:54:28 +0000     3316 bytes  lib/dialects/postgres/schema/compiler.js</tspan>
-<tspan x="10" y="714"> 43.  2017-04-18 19:54:28 +0000     6224 bytes  lib/dialects/postgres/schema/tablecompiler.js</tspan>
-<tspan x="10" y="730"> 44.  2017-04-18 19:54:28 +0000     6242 bytes  lib/dialects/sqlite3/index.js</tspan>
-<tspan x="10" y="746"> 45.  2017-04-18 19:54:28 +0000     5364 bytes  lib/dialects/sqlite3/query/compiler.js</tspan>
-<tspan x="10" y="762"> 46.  2017-04-18 19:54:28 +0000      899 bytes  lib/dialects/sqlite3/schema/columncompiler.js</tspan>
-<tspan x="10" y="778"> 47.  2017-04-18 19:54:28 +0000     1622 bytes  lib/dialects/sqlite3/schema/compiler.js</tspan>
-<tspan x="10" y="794"> 48.  2017-04-18 19:54:28 +0000     7783 bytes  lib/dialects/sqlite3/schema/ddl.js</tspan>
-<tspan x="10" y="810"> 49.  2017-04-18 19:54:28 +0000     5467 bytes  lib/dialects/sqlite3/schema/tablecompiler.js</tspan>
-<tspan x="10" y="826"> 50.  2017-04-18 19:54:28 +0000      719 bytes  lib/dialects/strong-oracle/index.js</tspan>
-<tspan x="10" y="842"> 51.  2017-04-18 19:54:28 +0000     4207 bytes  lib/dialects/websql/index.js</tspan>
-<tspan x="10" y="858"> 52.  2017-04-18 19:54:28 +0000     2297 bytes  lib/dialects/websql/transaction.js</tspan>
-<tspan x="10" y="874"> 53.  2017-04-18 19:54:28 +0000     6414 bytes  lib/formatter.js</tspan>
-<tspan x="10" y="890"> 54.  2017-04-18 19:54:28 +0000      299 bytes  lib/functionhelper.js</tspan>
-<tspan x="10" y="906"> 55.  2017-04-18 19:54:28 +0000     3073 bytes  lib/helpers.js</tspan>
-<tspan x="10" y="922"> 56.  2017-04-18 19:54:28 +0000     2870 bytes  lib/index.js</tspan>
-<tspan x="10" y="938"> 57.  2017-04-18 19:54:28 +0000     3238 bytes  lib/interface.js</tspan>
-<tspan x="10" y="954"> 58.  2017-04-18 19:54:28 +0000    17368 bytes  lib/migrate/index.js</tspan>
-<tspan x="10" y="970"> 59.  2017-04-18 19:54:28 +0000      682 bytes  lib/migrate/migrate-stub.js</tspan>
-<tspan x="10" y="986"> 60.  2017-04-18 19:54:28 +0000      291 bytes  lib/migrate/stub/coffee.stub</tspan>
-<tspan x="10" y="1002"> 61.  2017-04-18 19:54:28 +0000      295 bytes  lib/migrate/stub/eg.stub</tspan>
-<tspan x="10" y="1018"> 62.  2017-04-18 19:54:28 +0000      345 bytes  lib/migrate/stub/js.stub</tspan>
-<tspan x="10" y="1034"> 63.  2017-04-18 19:54:28 +0000      666 bytes  lib/migrate/stub/knexfile-coffee.stub</tspan>
-<tspan x="10" y="1050"> 64.  2017-04-18 19:54:28 +0000      873 bytes  lib/migrate/stub/knexfile-eg.stub</tspan>
-<tspan x="10" y="1066"> 65.  2017-04-18 19:54:28 +0000      721 bytes  lib/migrate/stub/knexfile-js.stub</tspan>
-<tspan x="10" y="1082"> 66.  2017-04-18 19:54:28 +0000      668 bytes  lib/migrate/stub/knexfile-ls.stub</tspan>
-<tspan x="10" y="1098"> 67.  2017-04-18 19:54:28 +0000      669 bytes  lib/migrate/stub/knexfile-ts.stub</tspan>
-<tspan x="10" y="1114"> 68.  2017-04-18 19:54:28 +0000      295 bytes  lib/migrate/stub/ls.stub</tspan>
-<tspan x="10" y="1130"> 69.  2017-04-18 19:54:28 +0000      408 bytes  lib/migrate/stub/ts.stub</tspan>
-<tspan x="10" y="1146"> 70.  2017-04-18 19:54:28 +0000    32045 bytes  lib/query/builder.js</tspan>
-<tspan x="10" y="1162"> 71.  2017-04-18 19:54:28 +0000    21572 bytes  lib/query/compiler.js</tspan>
-<tspan x="10" y="1178"> 72.  2017-04-18 19:54:28 +0000     6311 bytes  lib/query/joinclause.js</tspan>
-<tspan x="10" y="1194"> 73.  2017-04-18 19:54:28 +0000     1267 bytes  lib/query/methods.js</tspan>
-<tspan x="10" y="1210"> 74.  2017-04-18 19:54:28 +0000     5035 bytes  lib/query/string.js</tspan>
-<tspan x="10" y="1226"> 75.  2017-04-18 19:54:28 +0000     5827 bytes  lib/raw.js</tspan>
-<tspan x="10" y="1242"> 76.  2017-04-18 19:54:28 +0000     7913 bytes  lib/runner.js</tspan>
-<tspan x="10" y="1258"> 77.  2017-04-18 19:54:28 +0000     1923 bytes  lib/schema/builder.js</tspan>
-<tspan x="10" y="1274"> 78.  2017-04-18 19:54:28 +0000     3270 bytes  lib/schema/columnbuilder.js</tspan>
-<tspan x="10" y="1290"> 79.  2017-04-18 19:54:28 +0000     5826 bytes  lib/schema/columncompiler.js</tspan>
-<tspan x="10" y="1306"> 80.  2017-04-18 19:54:28 +0000     2098 bytes  lib/schema/compiler.js</tspan>
-<tspan x="10" y="1322"> 81.  2017-04-18 19:54:28 +0000     1118 bytes  lib/schema/helpers.js</tspan>
-<tspan x="10" y="1338"> 82.  2017-04-18 19:54:28 +0000     8168 bytes  lib/schema/tablebuilder.js</tspan>
-<tspan x="10" y="1354"> 83.  2017-04-18 19:54:28 +0000    10322 bytes  lib/schema/tablecompiler.js</tspan>
-<tspan x="10" y="1370"> 84.  2017-04-18 19:54:28 +0000     5789 bytes  lib/seed/index.js</tspan>
-<tspan x="10" y="1386"> 85.  2017-04-18 19:54:28 +0000      607 bytes  lib/seed/seed-stub.js</tspan>
-<tspan x="10" y="1402"> 86.  2017-04-18 19:54:28 +0000      248 bytes  lib/seed/stub/coffee.stub</tspan>
-<tspan x="10" y="1418"> 87.  2017-04-18 19:54:28 +0000      310 bytes  lib/seed/stub/eg.stub</tspan>
-<tspan x="10" y="1434"> 88.  2017-04-18 19:54:28 +0000      342 bytes  lib/seed/stub/js.stub</tspan>
-<tspan x="10" y="1450"> 89.  2017-04-18 19:54:28 +0000      288 bytes  lib/seed/stub/ls.stub</tspan>
-<tspan x="10" y="1466"> 90.  2017-04-18 19:54:28 +0000      444 bytes  lib/seed/stub/ts.stub</tspan>
-<tspan x="10" y="1482"> 91.  2017-04-18 19:54:28 +0000    10483 bytes  lib/transaction.js</tspan>
-<tspan x="10" y="1498"> 92.  2017-04-18 19:54:28 +0000     2696 bytes  lib/util/batchInsert.js</tspan>
-<tspan x="10" y="1514"> 93.  2017-04-18 19:54:28 +0000     4601 bytes  lib/util/make-knex.js</tspan>
-<tspan x="10" y="1530"> 94.  2017-04-18 19:54:28 +0000      114 bytes  lib/util/noop.js</tspan>
-<tspan x="10" y="1546"> 95.  2017-04-18 19:54:28 +0000     1713 bytes  lib/util/parse-connection.js</tspan>
-<tspan x="10" y="1562"> 96.  2017-04-18 19:54:28 +0000     5759 bytes  package.json</tspan>
-<tspan x="10" y="1578"> 97.  2017-04-18 19:54:28 +0000     4544 bytes  scripts/build.js</tspan>
-<tspan x="10" y="1594"> 98.  2017-04-18 19:54:28 +0000      686 bytes  scripts/release.sh</tspan>
-<tspan x="10" y="1610"> 99.  2017-04-18 19:54:28 +0000     8525 bytes  src/client.js</tspan>
-<tspan x="10" y="1626">100.  2017-04-18 19:54:28 +0000     4112 bytes  src/dialects/maria/index.js</tspan>
-<tspan x="10" y="1642">101.  2017-04-18 19:54:28 +0000      898 bytes  src/dialects/maria/transaction.js</tspan>
-<tspan x="10" y="1658">102.  2017-04-18 19:54:28 +0000     6854 bytes  src/dialects/mssql/index.js</tspan>
-<tspan x="10" y="1674">103.  2017-04-18 19:54:28 +0000     6578 bytes  src/dialects/mssql/query/compiler.js</tspan>
-<tspan x="10" y="1690">104.  2017-04-18 19:54:28 +0000     2369 bytes  src/dialects/mssql/schema/columncompiler.js</tspan>
-<tspan x="10" y="1706">105.  2017-04-18 19:54:28 +0000     1708 bytes  src/dialects/mssql/schema/compiler.js</tspan>
-<tspan x="10" y="1722">106.  2017-04-18 19:54:28 +0000     5905 bytes  src/dialects/mssql/schema/tablecompiler.js</tspan>
-<tspan x="10" y="1738">107.  2017-04-18 19:54:28 +0000     2306 bytes  src/dialects/mssql/transaction.js</tspan>
-<tspan x="10" y="1754">108.  2017-04-18 19:54:28 +0000     4873 bytes  src/dialects/mysql/index.js</tspan>
-<tspan x="10" y="1770">109.  2017-04-18 19:54:28 +0000     2223 bytes  src/dialects/mysql/query/compiler.js</tspan>
-<tspan x="10" y="1786">110.  2017-04-18 19:54:28 +0000     2430 bytes  src/dialects/mysql/schema/columncompiler.js</tspan>
-<tspan x="10" y="1802">111.  2017-04-18 19:54:28 +0000     1094 bytes  src/dialects/mysql/schema/compiler.js</tspan>
-<tspan x="10" y="1818">112.  2017-04-18 19:54:28 +0000     7257 bytes  src/dialects/mysql/schema/tablecompiler.js</tspan>
-<tspan x="10" y="1834">113.  2017-04-18 19:54:28 +0000     1091 bytes  src/dialects/mysql/transaction.js</tspan>
-<tspan x="10" y="1850">114.  2017-04-18 19:54:28 +0000     2496 bytes  src/dialects/mysql2/index.js</tspan>
-<tspan x="10" y="1866">115.  2017-04-18 19:54:28 +0000     1094 bytes  src/dialects/mysql2/transaction.js</tspan>
-<tspan x="10" y="1882">116.  2017-04-18 19:54:28 +0000      569 bytes  src/dialects/oracle/formatter.js</tspan>
-<tspan x="10" y="1898">117.  2017-04-18 19:54:28 +0000     5591 bytes  src/dialects/oracle/index.js</tspan>
-<tspan x="10" y="1914">118.  2017-04-18 19:54:28 +0000     8678 bytes  src/dialects/oracle/query/compiler.js</tspan>
-<tspan x="10" y="1930">119.  2017-04-18 19:54:28 +0000      546 bytes  src/dialects/oracle/schema/columnbuilder.js</tspan>
-<tspan x="10" y="1946">120.  2017-04-18 19:54:28 +0000     3227 bytes  src/dialects/oracle/schema/columncompiler.js</tspan>
-<tspan x="10" y="1962">121.  2017-04-18 19:54:28 +0000     2307 bytes  src/dialects/oracle/schema/compiler.js</tspan>
-<tspan x="10" y="1978">122.  2017-04-18 19:54:28 +0000     3894 bytes  src/dialects/oracle/schema/tablecompiler.js</tspan>
-<tspan x="10" y="1994">123.  2017-04-18 19:54:28 +0000     4728 bytes  src/dialects/oracle/schema/trigger.js</tspan>
-<tspan x="10" y="2010">124.  2017-04-18 19:54:28 +0000     1224 bytes  src/dialects/oracle/transaction.js</tspan>
-<tspan x="10" y="2026">125.  2017-04-18 19:54:28 +0000     1320 bytes  src/dialects/oracle/utils.js</tspan>
-<tspan x="10" y="2042">126.  2017-04-18 19:54:28 +0000    13097 bytes  src/dialects/oracledb/index.js</tspan>
-<tspan x="10" y="2058">127.  2017-04-18 19:54:28 +0000    10162 bytes  src/dialects/oracledb/query/compiler.js</tspan>
-<tspan x="10" y="2074">128.  2017-04-18 19:54:28 +0000      657 bytes  src/dialects/oracledb/schema/columncompiler.js</tspan>
-<tspan x="10" y="2090">129.  2017-04-18 19:54:28 +0000     1591 bytes  src/dialects/oracledb/transaction.js</tspan>
-<tspan x="10" y="2106">130.  2017-04-18 19:54:28 +0000      327 bytes  src/dialects/oracledb/utils.js</tspan>
-<tspan x="10" y="2122">131.  2017-04-18 19:54:28 +0000     7284 bytes  src/dialects/postgres/index.js</tspan>
-<tspan x="10" y="2138">132.  2017-04-18 19:54:28 +0000     2751 bytes  src/dialects/postgres/query/compiler.js</tspan>
-<tspan x="10" y="2154">133.  2017-04-18 19:54:28 +0000     1841 bytes  src/dialects/postgres/schema/columncompiler.js</tspan>
-<tspan x="10" y="2170">134.  2017-04-18 19:54:28 +0000     2938 bytes  src/dialects/postgres/schema/compiler.js</tspan>
-<tspan x="10" y="2186">135.  2017-04-18 19:54:28 +0000     5186 bytes  src/dialects/postgres/schema/tablecompiler.js</tspan>
-<tspan x="10" y="2202">136.  2017-04-18 19:54:28 +0000     4174 bytes  src/dialects/sqlite3/index.js</tspan>
-<tspan x="10" y="2218">137.  2017-04-18 19:54:28 +0000     4207 bytes  src/dialects/sqlite3/query/compiler.js</tspan>
-<tspan x="10" y="2234">138.  2017-04-18 19:54:28 +0000      559 bytes  src/dialects/sqlite3/schema/columncompiler.js</tspan>
-<tspan x="10" y="2250">139.  2017-04-18 19:54:28 +0000     1177 bytes  src/dialects/sqlite3/schema/compiler.js</tspan>
-<tspan x="10" y="2266">140.  2017-04-18 19:54:28 +0000     6736 bytes  src/dialects/sqlite3/schema/ddl.js</tspan>
-<tspan x="10" y="2282">141.  2017-04-18 19:54:28 +0000     4655 bytes  src/dialects/sqlite3/schema/tablecompiler.js</tspan>
-<tspan x="10" y="2298">142.  2017-04-18 19:54:28 +0000      394 bytes  src/dialects/strong-oracle/index.js</tspan>
-<tspan x="10" y="2314">143.  2017-04-18 19:54:28 +0000     3049 bytes  src/dialects/websql/index.js</tspan>
-<tspan x="10" y="2330">144.  2017-04-18 19:54:28 +0000     1452 bytes  src/dialects/websql/transaction.js</tspan>
-<tspan x="10" y="2346">145.  2017-04-18 19:54:28 +0000     5223 bytes  src/formatter.js</tspan>
-<tspan x="10" y="2362">146.  2017-04-18 19:54:28 +0000      213 bytes  src/functionhelper.js</tspan>
-<tspan x="10" y="2378">147.  2017-04-18 19:54:28 +0000     1853 bytes  src/helpers.js</tspan>
-<tspan x="10" y="2394">148.  2017-04-18 19:54:28 +0000     2040 bytes  src/index.js</tspan>
-<tspan x="10" y="2410">149.  2017-04-18 19:54:28 +0000     2354 bytes  src/interface.js</tspan>
-<tspan x="10" y="2426">150.  2017-04-18 19:54:28 +0000    12588 bytes  src/migrate/index.js</tspan>
-<tspan x="10" y="2442">151.  2017-04-18 19:54:28 +0000      505 bytes  src/migrate/migrate-stub.js</tspan>
-<tspan x="10" y="2458">152.  2017-04-18 19:54:28 +0000      291 bytes  src/migrate/stub/coffee.stub</tspan>
-<tspan x="10" y="2474">153.  2017-04-18 19:54:28 +0000      295 bytes  src/migrate/stub/eg.stub</tspan>
-<tspan x="10" y="2490">154.  2017-04-18 19:54:28 +0000      345 bytes  src/migrate/stub/js.stub</tspan>
-<tspan x="10" y="2506">155.  2017-04-18 19:54:28 +0000      666 bytes  src/migrate/stub/knexfile-coffee.stub</tspan>
-<tspan x="10" y="2522">156.  2017-04-18 19:54:28 +0000      873 bytes  src/migrate/stub/knexfile-eg.stub</tspan>
-<tspan x="10" y="2538">157.  2017-04-18 19:54:28 +0000      721 bytes  src/migrate/stub/knexfile-js.stub</tspan>
-<tspan x="10" y="2554">158.  2017-04-18 19:54:28 +0000      668 bytes  src/migrate/stub/knexfile-ls.stub</tspan>
-<tspan x="10" y="2570">159.  2017-04-18 19:54:28 +0000      669 bytes  src/migrate/stub/knexfile-ts.stub</tspan>
-<tspan x="10" y="2586">160.  2017-04-18 19:54:28 +0000      295 bytes  src/migrate/stub/ls.stub</tspan>
-<tspan x="10" y="2602">161.  2017-04-18 19:54:28 +0000      408 bytes  src/migrate/stub/ts.stub</tspan>
-<tspan x="10" y="2618">162.  2017-04-18 19:54:28 +0000    26977 bytes  src/query/builder.js</tspan>
-<tspan x="10" y="2634">163.  2017-04-18 19:54:28 +0000    18584 bytes  src/query/compiler.js</tspan>
-<tspan x="10" y="2650">164.  2017-04-18 19:54:28 +0000     5153 bytes  src/query/joinclause.js</tspan>
-<tspan x="10" y="2666">165.  2017-04-18 19:54:28 +0000     1354 bytes  src/query/methods.js</tspan>
-<tspan x="10" y="2682">166.  2017-04-18 19:54:28 +0000     4196 bytes  src/query/string.js</tspan>
-<tspan x="10" y="2698">167.  2017-04-18 19:54:28 +0000     4122 bytes  src/raw.js</tspan>
-<tspan x="10" y="2714">168.  2017-04-18 19:54:28 +0000     6804 bytes  src/runner.js</tspan>
-<tspan x="10" y="2730">169.  2017-04-18 19:54:28 +0000     1511 bytes  src/schema/builder.js</tspan>
-<tspan x="10" y="2746">170.  2017-04-18 19:54:28 +0000     2811 bytes  src/schema/columnbuilder.js</tspan>
-<tspan x="10" y="2762">171.  2017-04-18 19:54:28 +0000     4599 bytes  src/schema/columncompiler.js</tspan>
-<tspan x="10" y="2778">172.  2017-04-18 19:54:28 +0000     1804 bytes  src/schema/compiler.js</tspan>
-<tspan x="10" y="2794">173.  2017-04-18 19:54:28 +0000      748 bytes  src/schema/helpers.js</tspan>
-<tspan x="10" y="2810">174.  2017-04-18 19:54:28 +0000     6869 bytes  src/schema/tablebuilder.js</tspan>
-<tspan x="10" y="2826">175.  2017-04-18 19:54:28 +0000     8405 bytes  src/schema/tablecompiler.js</tspan>
-<tspan x="10" y="2842">176.  2017-04-18 19:54:28 +0000     4448 bytes  src/seed/index.js</tspan>
-<tspan x="10" y="2858">177.  2017-04-18 19:54:28 +0000      430 bytes  src/seed/seed-stub.js</tspan>
-<tspan x="10" y="2874">178.  2017-04-18 19:54:28 +0000      248 bytes  src/seed/stub/coffee.stub</tspan>
-<tspan x="10" y="2890">179.  2017-04-18 19:54:28 +0000      310 bytes  src/seed/stub/eg.stub</tspan>
-<tspan x="10" y="2906">180.  2017-04-18 19:54:28 +0000      342 bytes  src/seed/stub/js.stub</tspan>
-<tspan x="10" y="2922">181.  2017-04-18 19:54:28 +0000      288 bytes  src/seed/stub/ls.stub</tspan>
-<tspan x="10" y="2938">182.  2017-04-18 19:54:28 +0000      444 bytes  src/seed/stub/ts.stub</tspan>
-<tspan x="10" y="2954">183.  2017-04-18 19:54:28 +0000     8257 bytes  src/transaction.js</tspan>
-<tspan x="10" y="2970">184.  2017-04-18 19:54:28 +0000     1691 bytes  src/util/batchInsert.js</tspan>
-<tspan x="10" y="2986">185.  2017-04-18 19:54:28 +0000     3278 bytes  src/util/make-knex.js</tspan>
-<tspan x="10" y="3002">186.  2017-04-18 19:54:28 +0000       29 bytes  src/util/noop.js</tspan>
-<tspan x="10" y="3018">187.  2017-04-18 19:54:28 +0000     1418 bytes  src/util/parse-connection.js</tspan>
+<tspan x="10" y="26">  0.  2017-04-19 03:38:53 +0000   754764 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-19 03:38:53 +0000    24161 bytes  CHANGELOG.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-19 03:38:53 +0000     3090 bytes  CONTRIBUTING.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-19 03:38:53 +0000     1064 bytes  LICENSE</tspan>
+<tspan x="10" y="90">  4.  2017-04-19 03:38:53 +0000     2784 bytes  README.md</tspan>
+<tspan x="10" y="106">  5.  2017-04-19 03:38:53 +0000     6498 bytes  bin/cli.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-19 03:38:53 +0000      232 bytes  knex.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-19 03:38:53 +0000    11491 bytes  lib/client.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-19 03:38:53 +0000     5470 bytes  lib/dialects/maria/index.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-19 03:38:53 +0000     2311 bytes  lib/dialects/maria/transaction.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-19 03:38:53 +0000    10104 bytes  lib/dialects/mssql/index.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-19 03:38:53 +0000     7515 bytes  lib/dialects/mssql/query/compiler.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-19 03:38:53 +0000     3347 bytes  lib/dialects/mssql/schema/columncompiler.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-19 03:38:53 +0000     2257 bytes  lib/dialects/mssql/schema/compiler.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-19 03:38:53 +0000     7110 bytes  lib/dialects/mssql/schema/tablecompiler.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-19 03:38:53 +0000     3951 bytes  lib/dialects/mssql/transaction.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-19 03:38:53 +0000     7074 bytes  lib/dialects/mysql/index.js</tspan>
+<tspan x="10" y="298"> 17.  2017-04-19 03:38:53 +0000     2660 bytes  lib/dialects/mysql/query/compiler.js</tspan>
+<tspan x="10" y="314"> 18.  2017-04-19 03:38:53 +0000     3493 bytes  lib/dialects/mysql/schema/columncompiler.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-19 03:38:53 +0000     1574 bytes  lib/dialects/mysql/schema/compiler.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-19 03:38:53 +0000     8349 bytes  lib/dialects/mysql/schema/tablecompiler.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-19 03:38:53 +0000     1872 bytes  lib/dialects/mysql/transaction.js</tspan>
+<tspan x="10" y="378"> 22.  2017-04-19 03:38:53 +0000     3716 bytes  lib/dialects/mysql2/index.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-19 03:38:53 +0000     1810 bytes  lib/dialects/mysql2/transaction.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-19 03:38:53 +0000     1684 bytes  lib/dialects/oracle/formatter.js</tspan>
+<tspan x="10" y="426"> 25.  2017-04-19 03:38:53 +0000     8243 bytes  lib/dialects/oracle/index.js</tspan>
+<tspan x="10" y="442"> 26.  2017-04-19 03:38:53 +0000    10389 bytes  lib/dialects/oracle/query/compiler.js</tspan>
+<tspan x="10" y="458"> 27.  2017-04-19 03:38:53 +0000      962 bytes  lib/dialects/oracle/schema/columnbuilder.js</tspan>
+<tspan x="10" y="474"> 28.  2017-04-19 03:38:53 +0000     4309 bytes  lib/dialects/oracle/schema/columncompiler.js</tspan>
+<tspan x="10" y="490"> 29.  2017-04-19 03:38:53 +0000     3039 bytes  lib/dialects/oracle/schema/compiler.js</tspan>
+<tspan x="10" y="506"> 30.  2017-04-19 03:38:53 +0000     5079 bytes  lib/dialects/oracle/schema/tablecompiler.js</tspan>
+<tspan x="10" y="522"> 31.  2017-04-19 03:38:53 +0000     5134 bytes  lib/dialects/oracle/schema/trigger.js</tspan>
+<tspan x="10" y="538"> 32.  2017-04-19 03:38:53 +0000     2588 bytes  lib/dialects/oracle/transaction.js</tspan>
+<tspan x="10" y="554"> 33.  2017-04-19 03:38:53 +0000     1815 bytes  lib/dialects/oracle/utils.js</tspan>
+<tspan x="10" y="570"> 34.  2017-04-19 03:38:53 +0000    14436 bytes  lib/dialects/oracledb/index.js</tspan>
+<tspan x="10" y="586"> 35.  2017-04-19 03:38:53 +0000     9825 bytes  lib/dialects/oracledb/query/compiler.js</tspan>
+<tspan x="10" y="602"> 36.  2017-04-19 03:38:53 +0000      845 bytes  lib/dialects/oracledb/schema/columncompiler.js</tspan>
+<tspan x="10" y="618"> 37.  2017-04-19 03:38:53 +0000     2791 bytes  lib/dialects/oracledb/transaction.js</tspan>
+<tspan x="10" y="634"> 38.  2017-04-19 03:38:53 +0000      340 bytes  lib/dialects/oracledb/utils.js</tspan>
+<tspan x="10" y="650"> 39.  2017-04-19 03:38:53 +0000     9281 bytes  lib/dialects/postgres/index.js</tspan>
+<tspan x="10" y="666"> 40.  2017-04-19 03:38:53 +0000     3453 bytes  lib/dialects/postgres/query/compiler.js</tspan>
+<tspan x="10" y="682"> 41.  2017-04-19 03:38:53 +0000     2723 bytes  lib/dialects/postgres/schema/columncompiler.js</tspan>
+<tspan x="10" y="698"> 42.  2017-04-19 03:38:53 +0000     3316 bytes  lib/dialects/postgres/schema/compiler.js</tspan>
+<tspan x="10" y="714"> 43.  2017-04-19 03:38:53 +0000     6224 bytes  lib/dialects/postgres/schema/tablecompiler.js</tspan>
+<tspan x="10" y="730"> 44.  2017-04-19 03:38:53 +0000     6242 bytes  lib/dialects/sqlite3/index.js</tspan>
+<tspan x="10" y="746"> 45.  2017-04-19 03:38:53 +0000     5364 bytes  lib/dialects/sqlite3/query/compiler.js</tspan>
+<tspan x="10" y="762"> 46.  2017-04-19 03:38:53 +0000      899 bytes  lib/dialects/sqlite3/schema/columncompiler.js</tspan>
+<tspan x="10" y="778"> 47.  2017-04-19 03:38:53 +0000     1622 bytes  lib/dialects/sqlite3/schema/compiler.js</tspan>
+<tspan x="10" y="794"> 48.  2017-04-19 03:38:53 +0000     7783 bytes  lib/dialects/sqlite3/schema/ddl.js</tspan>
+<tspan x="10" y="810"> 49.  2017-04-19 03:38:53 +0000     5467 bytes  lib/dialects/sqlite3/schema/tablecompiler.js</tspan>
+<tspan x="10" y="826"> 50.  2017-04-19 03:38:53 +0000      719 bytes  lib/dialects/strong-oracle/index.js</tspan>
+<tspan x="10" y="842"> 51.  2017-04-19 03:38:53 +0000     4207 bytes  lib/dialects/websql/index.js</tspan>
+<tspan x="10" y="858"> 52.  2017-04-19 03:38:53 +0000     2297 bytes  lib/dialects/websql/transaction.js</tspan>
+<tspan x="10" y="874"> 53.  2017-04-19 03:38:53 +0000     6414 bytes  lib/formatter.js</tspan>
+<tspan x="10" y="890"> 54.  2017-04-19 03:38:53 +0000      299 bytes  lib/functionhelper.js</tspan>
+<tspan x="10" y="906"> 55.  2017-04-19 03:38:53 +0000     3073 bytes  lib/helpers.js</tspan>
+<tspan x="10" y="922"> 56.  2017-04-19 03:38:53 +0000     2870 bytes  lib/index.js</tspan>
+<tspan x="10" y="938"> 57.  2017-04-19 03:38:53 +0000     3238 bytes  lib/interface.js</tspan>
+<tspan x="10" y="954"> 58.  2017-04-19 03:38:53 +0000    17368 bytes  lib/migrate/index.js</tspan>
+<tspan x="10" y="970"> 59.  2017-04-19 03:38:53 +0000      682 bytes  lib/migrate/migrate-stub.js</tspan>
+<tspan x="10" y="986"> 60.  2017-04-19 03:38:53 +0000      291 bytes  lib/migrate/stub/coffee.stub</tspan>
+<tspan x="10" y="1002"> 61.  2017-04-19 03:38:53 +0000      295 bytes  lib/migrate/stub/eg.stub</tspan>
+<tspan x="10" y="1018"> 62.  2017-04-19 03:38:53 +0000      345 bytes  lib/migrate/stub/js.stub</tspan>
+<tspan x="10" y="1034"> 63.  2017-04-19 03:38:53 +0000      666 bytes  lib/migrate/stub/knexfile-coffee.stub</tspan>
+<tspan x="10" y="1050"> 64.  2017-04-19 03:38:53 +0000      873 bytes  lib/migrate/stub/knexfile-eg.stub</tspan>
+<tspan x="10" y="1066"> 65.  2017-04-19 03:38:53 +0000      721 bytes  lib/migrate/stub/knexfile-js.stub</tspan>
+<tspan x="10" y="1082"> 66.  2017-04-19 03:38:53 +0000      668 bytes  lib/migrate/stub/knexfile-ls.stub</tspan>
+<tspan x="10" y="1098"> 67.  2017-04-19 03:38:53 +0000      669 bytes  lib/migrate/stub/knexfile-ts.stub</tspan>
+<tspan x="10" y="1114"> 68.  2017-04-19 03:38:53 +0000      295 bytes  lib/migrate/stub/ls.stub</tspan>
+<tspan x="10" y="1130"> 69.  2017-04-19 03:38:53 +0000      408 bytes  lib/migrate/stub/ts.stub</tspan>
+<tspan x="10" y="1146"> 70.  2017-04-19 03:38:53 +0000    32045 bytes  lib/query/builder.js</tspan>
+<tspan x="10" y="1162"> 71.  2017-04-19 03:38:53 +0000    21572 bytes  lib/query/compiler.js</tspan>
+<tspan x="10" y="1178"> 72.  2017-04-19 03:38:53 +0000     6311 bytes  lib/query/joinclause.js</tspan>
+<tspan x="10" y="1194"> 73.  2017-04-19 03:38:53 +0000     1267 bytes  lib/query/methods.js</tspan>
+<tspan x="10" y="1210"> 74.  2017-04-19 03:38:53 +0000     5035 bytes  lib/query/string.js</tspan>
+<tspan x="10" y="1226"> 75.  2017-04-19 03:38:53 +0000     5827 bytes  lib/raw.js</tspan>
+<tspan x="10" y="1242"> 76.  2017-04-19 03:38:53 +0000     7913 bytes  lib/runner.js</tspan>
+<tspan x="10" y="1258"> 77.  2017-04-19 03:38:53 +0000     1923 bytes  lib/schema/builder.js</tspan>
+<tspan x="10" y="1274"> 78.  2017-04-19 03:38:53 +0000     3270 bytes  lib/schema/columnbuilder.js</tspan>
+<tspan x="10" y="1290"> 79.  2017-04-19 03:38:53 +0000     5826 bytes  lib/schema/columncompiler.js</tspan>
+<tspan x="10" y="1306"> 80.  2017-04-19 03:38:53 +0000     2098 bytes  lib/schema/compiler.js</tspan>
+<tspan x="10" y="1322"> 81.  2017-04-19 03:38:53 +0000     1118 bytes  lib/schema/helpers.js</tspan>
+<tspan x="10" y="1338"> 82.  2017-04-19 03:38:53 +0000     8168 bytes  lib/schema/tablebuilder.js</tspan>
+<tspan x="10" y="1354"> 83.  2017-04-19 03:38:53 +0000    10322 bytes  lib/schema/tablecompiler.js</tspan>
+<tspan x="10" y="1370"> 84.  2017-04-19 03:38:53 +0000     5789 bytes  lib/seed/index.js</tspan>
+<tspan x="10" y="1386"> 85.  2017-04-19 03:38:53 +0000      607 bytes  lib/seed/seed-stub.js</tspan>
+<tspan x="10" y="1402"> 86.  2017-04-19 03:38:53 +0000      248 bytes  lib/seed/stub/coffee.stub</tspan>
+<tspan x="10" y="1418"> 87.  2017-04-19 03:38:53 +0000      310 bytes  lib/seed/stub/eg.stub</tspan>
+<tspan x="10" y="1434"> 88.  2017-04-19 03:38:53 +0000      342 bytes  lib/seed/stub/js.stub</tspan>
+<tspan x="10" y="1450"> 89.  2017-04-19 03:38:53 +0000      288 bytes  lib/seed/stub/ls.stub</tspan>
+<tspan x="10" y="1466"> 90.  2017-04-19 03:38:53 +0000      444 bytes  lib/seed/stub/ts.stub</tspan>
+<tspan x="10" y="1482"> 91.  2017-04-19 03:38:53 +0000    10483 bytes  lib/transaction.js</tspan>
+<tspan x="10" y="1498"> 92.  2017-04-19 03:38:53 +0000     2696 bytes  lib/util/batchInsert.js</tspan>
+<tspan x="10" y="1514"> 93.  2017-04-19 03:38:53 +0000     4601 bytes  lib/util/make-knex.js</tspan>
+<tspan x="10" y="1530"> 94.  2017-04-19 03:38:53 +0000      114 bytes  lib/util/noop.js</tspan>
+<tspan x="10" y="1546"> 95.  2017-04-19 03:38:53 +0000     1713 bytes  lib/util/parse-connection.js</tspan>
+<tspan x="10" y="1562"> 96.  2017-04-19 03:38:53 +0000     5759 bytes  package.json</tspan>
+<tspan x="10" y="1578"> 97.  2017-04-19 03:38:53 +0000     4544 bytes  scripts/build.js</tspan>
+<tspan x="10" y="1594"> 98.  2017-04-19 03:38:53 +0000      686 bytes  scripts/release.sh</tspan>
+<tspan x="10" y="1610"> 99.  2017-04-19 03:38:53 +0000     8525 bytes  src/client.js</tspan>
+<tspan x="10" y="1626">100.  2017-04-19 03:38:53 +0000     4112 bytes  src/dialects/maria/index.js</tspan>
+<tspan x="10" y="1642">101.  2017-04-19 03:38:53 +0000      898 bytes  src/dialects/maria/transaction.js</tspan>
+<tspan x="10" y="1658">102.  2017-04-19 03:38:53 +0000     6854 bytes  src/dialects/mssql/index.js</tspan>
+<tspan x="10" y="1674">103.  2017-04-19 03:38:53 +0000     6578 bytes  src/dialects/mssql/query/compiler.js</tspan>
+<tspan x="10" y="1690">104.  2017-04-19 03:38:53 +0000     2369 bytes  src/dialects/mssql/schema/columncompiler.js</tspan>
+<tspan x="10" y="1706">105.  2017-04-19 03:38:53 +0000     1708 bytes  src/dialects/mssql/schema/compiler.js</tspan>
+<tspan x="10" y="1722">106.  2017-04-19 03:38:53 +0000     5905 bytes  src/dialects/mssql/schema/tablecompiler.js</tspan>
+<tspan x="10" y="1738">107.  2017-04-19 03:38:53 +0000     2306 bytes  src/dialects/mssql/transaction.js</tspan>
+<tspan x="10" y="1754">108.  2017-04-19 03:38:53 +0000     4873 bytes  src/dialects/mysql/index.js</tspan>
+<tspan x="10" y="1770">109.  2017-04-19 03:38:53 +0000     2223 bytes  src/dialects/mysql/query/compiler.js</tspan>
+<tspan x="10" y="1786">110.  2017-04-19 03:38:53 +0000     2430 bytes  src/dialects/mysql/schema/columncompiler.js</tspan>
+<tspan x="10" y="1802">111.  2017-04-19 03:38:53 +0000     1094 bytes  src/dialects/mysql/schema/compiler.js</tspan>
+<tspan x="10" y="1818">112.  2017-04-19 03:38:53 +0000     7257 bytes  src/dialects/mysql/schema/tablecompiler.js</tspan>
+<tspan x="10" y="1834">113.  2017-04-19 03:38:53 +0000     1091 bytes  src/dialects/mysql/transaction.js</tspan>
+<tspan x="10" y="1850">114.  2017-04-19 03:38:53 +0000     2496 bytes  src/dialects/mysql2/index.js</tspan>
+<tspan x="10" y="1866">115.  2017-04-19 03:38:53 +0000     1094 bytes  src/dialects/mysql2/transaction.js</tspan>
+<tspan x="10" y="1882">116.  2017-04-19 03:38:53 +0000      569 bytes  src/dialects/oracle/formatter.js</tspan>
+<tspan x="10" y="1898">117.  2017-04-19 03:38:53 +0000     5591 bytes  src/dialects/oracle/index.js</tspan>
+<tspan x="10" y="1914">118.  2017-04-19 03:38:53 +0000     8678 bytes  src/dialects/oracle/query/compiler.js</tspan>
+<tspan x="10" y="1930">119.  2017-04-19 03:38:53 +0000      546 bytes  src/dialects/oracle/schema/columnbuilder.js</tspan>
+<tspan x="10" y="1946">120.  2017-04-19 03:38:53 +0000     3227 bytes  src/dialects/oracle/schema/columncompiler.js</tspan>
+<tspan x="10" y="1962">121.  2017-04-19 03:38:53 +0000     2307 bytes  src/dialects/oracle/schema/compiler.js</tspan>
+<tspan x="10" y="1978">122.  2017-04-19 03:38:53 +0000     3894 bytes  src/dialects/oracle/schema/tablecompiler.js</tspan>
+<tspan x="10" y="1994">123.  2017-04-19 03:38:53 +0000     4728 bytes  src/dialects/oracle/schema/trigger.js</tspan>
+<tspan x="10" y="2010">124.  2017-04-19 03:38:53 +0000     1224 bytes  src/dialects/oracle/transaction.js</tspan>
+<tspan x="10" y="2026">125.  2017-04-19 03:38:53 +0000     1320 bytes  src/dialects/oracle/utils.js</tspan>
+<tspan x="10" y="2042">126.  2017-04-19 03:38:53 +0000    13097 bytes  src/dialects/oracledb/index.js</tspan>
+<tspan x="10" y="2058">127.  2017-04-19 03:38:53 +0000    10162 bytes  src/dialects/oracledb/query/compiler.js</tspan>
+<tspan x="10" y="2074">128.  2017-04-19 03:38:53 +0000      657 bytes  src/dialects/oracledb/schema/columncompiler.js</tspan>
+<tspan x="10" y="2090">129.  2017-04-19 03:38:53 +0000     1591 bytes  src/dialects/oracledb/transaction.js</tspan>
+<tspan x="10" y="2106">130.  2017-04-19 03:38:53 +0000      327 bytes  src/dialects/oracledb/utils.js</tspan>
+<tspan x="10" y="2122">131.  2017-04-19 03:38:53 +0000     7284 bytes  src/dialects/postgres/index.js</tspan>
+<tspan x="10" y="2138">132.  2017-04-19 03:38:53 +0000     2751 bytes  src/dialects/postgres/query/compiler.js</tspan>
+<tspan x="10" y="2154">133.  2017-04-19 03:38:53 +0000     1841 bytes  src/dialects/postgres/schema/columncompiler.js</tspan>
+<tspan x="10" y="2170">134.  2017-04-19 03:38:53 +0000     2938 bytes  src/dialects/postgres/schema/compiler.js</tspan>
+<tspan x="10" y="2186">135.  2017-04-19 03:38:53 +0000     5186 bytes  src/dialects/postgres/schema/tablecompiler.js</tspan>
+<tspan x="10" y="2202">136.  2017-04-19 03:38:53 +0000     4174 bytes  src/dialects/sqlite3/index.js</tspan>
+<tspan x="10" y="2218">137.  2017-04-19 03:38:53 +0000     4207 bytes  src/dialects/sqlite3/query/compiler.js</tspan>
+<tspan x="10" y="2234">138.  2017-04-19 03:38:53 +0000      559 bytes  src/dialects/sqlite3/schema/columncompiler.js</tspan>
+<tspan x="10" y="2250">139.  2017-04-19 03:38:53 +0000     1177 bytes  src/dialects/sqlite3/schema/compiler.js</tspan>
+<tspan x="10" y="2266">140.  2017-04-19 03:38:53 +0000     6736 bytes  src/dialects/sqlite3/schema/ddl.js</tspan>
+<tspan x="10" y="2282">141.  2017-04-19 03:38:53 +0000     4655 bytes  src/dialects/sqlite3/schema/tablecompiler.js</tspan>
+<tspan x="10" y="2298">142.  2017-04-19 03:38:53 +0000      394 bytes  src/dialects/strong-oracle/index.js</tspan>
+<tspan x="10" y="2314">143.  2017-04-19 03:38:53 +0000     3049 bytes  src/dialects/websql/index.js</tspan>
+<tspan x="10" y="2330">144.  2017-04-19 03:38:53 +0000     1452 bytes  src/dialects/websql/transaction.js</tspan>
+<tspan x="10" y="2346">145.  2017-04-19 03:38:53 +0000     5223 bytes  src/formatter.js</tspan>
+<tspan x="10" y="2362">146.  2017-04-19 03:38:53 +0000      213 bytes  src/functionhelper.js</tspan>
+<tspan x="10" y="2378">147.  2017-04-19 03:38:53 +0000     1853 bytes  src/helpers.js</tspan>
+<tspan x="10" y="2394">148.  2017-04-19 03:38:53 +0000     2040 bytes  src/index.js</tspan>
+<tspan x="10" y="2410">149.  2017-04-19 03:38:53 +0000     2354 bytes  src/interface.js</tspan>
+<tspan x="10" y="2426">150.  2017-04-19 03:38:53 +0000    12588 bytes  src/migrate/index.js</tspan>
+<tspan x="10" y="2442">151.  2017-04-19 03:38:53 +0000      505 bytes  src/migrate/migrate-stub.js</tspan>
+<tspan x="10" y="2458">152.  2017-04-19 03:38:53 +0000      291 bytes  src/migrate/stub/coffee.stub</tspan>
+<tspan x="10" y="2474">153.  2017-04-19 03:38:53 +0000      295 bytes  src/migrate/stub/eg.stub</tspan>
+<tspan x="10" y="2490">154.  2017-04-19 03:38:53 +0000      345 bytes  src/migrate/stub/js.stub</tspan>
+<tspan x="10" y="2506">155.  2017-04-19 03:38:53 +0000      666 bytes  src/migrate/stub/knexfile-coffee.stub</tspan>
+<tspan x="10" y="2522">156.  2017-04-19 03:38:53 +0000      873 bytes  src/migrate/stub/knexfile-eg.stub</tspan>
+<tspan x="10" y="2538">157.  2017-04-19 03:38:53 +0000      721 bytes  src/migrate/stub/knexfile-js.stub</tspan>
+<tspan x="10" y="2554">158.  2017-04-19 03:38:53 +0000      668 bytes  src/migrate/stub/knexfile-ls.stub</tspan>
+<tspan x="10" y="2570">159.  2017-04-19 03:38:53 +0000      669 bytes  src/migrate/stub/knexfile-ts.stub</tspan>
+<tspan x="10" y="2586">160.  2017-04-19 03:38:53 +0000      295 bytes  src/migrate/stub/ls.stub</tspan>
+<tspan x="10" y="2602">161.  2017-04-19 03:38:53 +0000      408 bytes  src/migrate/stub/ts.stub</tspan>
+<tspan x="10" y="2618">162.  2017-04-19 03:38:53 +0000    26977 bytes  src/query/builder.js</tspan>
+<tspan x="10" y="2634">163.  2017-04-19 03:38:53 +0000    18584 bytes  src/query/compiler.js</tspan>
+<tspan x="10" y="2650">164.  2017-04-19 03:38:53 +0000     5153 bytes  src/query/joinclause.js</tspan>
+<tspan x="10" y="2666">165.  2017-04-19 03:38:53 +0000     1354 bytes  src/query/methods.js</tspan>
+<tspan x="10" y="2682">166.  2017-04-19 03:38:53 +0000     4196 bytes  src/query/string.js</tspan>
+<tspan x="10" y="2698">167.  2017-04-19 03:38:53 +0000     4122 bytes  src/raw.js</tspan>
+<tspan x="10" y="2714">168.  2017-04-19 03:38:53 +0000     6804 bytes  src/runner.js</tspan>
+<tspan x="10" y="2730">169.  2017-04-19 03:38:53 +0000     1511 bytes  src/schema/builder.js</tspan>
+<tspan x="10" y="2746">170.  2017-04-19 03:38:53 +0000     2811 bytes  src/schema/columnbuilder.js</tspan>
+<tspan x="10" y="2762">171.  2017-04-19 03:38:53 +0000     4599 bytes  src/schema/columncompiler.js</tspan>
+<tspan x="10" y="2778">172.  2017-04-19 03:38:53 +0000     1804 bytes  src/schema/compiler.js</tspan>
+<tspan x="10" y="2794">173.  2017-04-19 03:38:53 +0000      748 bytes  src/schema/helpers.js</tspan>
+<tspan x="10" y="2810">174.  2017-04-19 03:38:53 +0000     6869 bytes  src/schema/tablebuilder.js</tspan>
+<tspan x="10" y="2826">175.  2017-04-19 03:38:53 +0000     8405 bytes  src/schema/tablecompiler.js</tspan>
+<tspan x="10" y="2842">176.  2017-04-19 03:38:53 +0000     4448 bytes  src/seed/index.js</tspan>
+<tspan x="10" y="2858">177.  2017-04-19 03:38:53 +0000      430 bytes  src/seed/seed-stub.js</tspan>
+<tspan x="10" y="2874">178.  2017-04-19 03:38:53 +0000      248 bytes  src/seed/stub/coffee.stub</tspan>
+<tspan x="10" y="2890">179.  2017-04-19 03:38:53 +0000      310 bytes  src/seed/stub/eg.stub</tspan>
+<tspan x="10" y="2906">180.  2017-04-19 03:38:53 +0000      342 bytes  src/seed/stub/js.stub</tspan>
+<tspan x="10" y="2922">181.  2017-04-19 03:38:53 +0000      288 bytes  src/seed/stub/ls.stub</tspan>
+<tspan x="10" y="2938">182.  2017-04-19 03:38:53 +0000      444 bytes  src/seed/stub/ts.stub</tspan>
+<tspan x="10" y="2954">183.  2017-04-19 03:38:53 +0000     8257 bytes  src/transaction.js</tspan>
+<tspan x="10" y="2970">184.  2017-04-19 03:38:53 +0000     1691 bytes  src/util/batchInsert.js</tspan>
+<tspan x="10" y="2986">185.  2017-04-19 03:38:53 +0000     3278 bytes  src/util/make-knex.js</tspan>
+<tspan x="10" y="3002">186.  2017-04-19 03:38:53 +0000       29 bytes  src/util/noop.js</tspan>
+<tspan x="10" y="3018">187.  2017-04-19 03:38:53 +0000     1418 bytes  src/util/parse-connection.js</tspan>
 </text>
 </svg>
