@@ -1,6 +1,6 @@
 # npmtest-knex
 
-#### test coverage for  [knex (v0.12.9)](https://github.com/tgriesser/knex#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-knex.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-knex) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-knex.svg)](https://travis-ci.org/npmtest/node-npmtest-knex)
+#### basic test coverage for  [knex (v0.12.9)](https://github.com/tgriesser/knex#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-knex.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-knex) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-knex.svg)](https://travis-ci.org/npmtest/node-npmtest-knex)
 
 #### A batteries-included SQL query & schema builder for Postgres, MySQL and SQLite3 and the Browser
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-knex/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-knex/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-knex/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-knex/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-knex/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-knex/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-knex/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-knex/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-knex/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-knex/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-knex/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-knex/build/coverage.html/index.html)
 
